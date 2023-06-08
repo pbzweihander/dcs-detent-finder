@@ -12,4 +12,5 @@ export default defineConfig({
     host: true,
     https: true,
   },
+  base: '/dcs-detent-finder/',
 })
