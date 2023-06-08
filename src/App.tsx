@@ -104,6 +104,10 @@ export default function App() {
               setSelectedAxisIndex(undefined);
             }}
           />
+          <div className="px-2 text-xs">
+            If the device is not listed, press any button, move an axis, or
+            re-plug the device.
+          </div>
           {selectedGamepad !== undefined && (
             <>
               <div className="divider" />
