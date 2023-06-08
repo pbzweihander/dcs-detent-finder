@@ -1,5 +1,7 @@
 # DCS World Afterburner Detent Finder
 
+[Check out here!](https://pbzweihander.github.io/dcs-detent-finder/)
+
 ![screenshot](./screenshot.png)
 
 DCS World afterburner detent finder on web.
