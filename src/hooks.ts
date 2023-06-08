@@ -42,8 +42,8 @@ export function useGamepads(): Gamepad[] {
     const detectedGamepads =
       navigator.getGamepads != null
         ? navigator.getGamepads()
-        : navigator.webkitGetGamepads != null
-        ? navigator.webkitGetGamepads()
+        : (navigator as any).webkitGetGamepads != null
+        ? (navigator as any).webkitGetGamepads()
         : [];
 
     for (const gamepad of detectedGamepads) {
