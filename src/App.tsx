@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Line, LineChart, ResponsiveContainer } from "recharts";
 
 import Select from "./Select";
+import githubLogo from "./assets/github-mark.svg";
 import { aircraftDetents } from "./data";
 import { useGamepads } from "./hooks";
 
@@ -63,6 +64,14 @@ export default function App() {
     <>
       <div className="navbar bg-base-200">
         <h1 className="ml-2 text-xl">DCS Afterburner Detent Finder</h1>
+        <span className="grow" />
+        <a
+          className="link mr-2"
+          href="https://github.com/pbzweihander/dcs-detent-finder"
+        >
+          <img src={githubLogo} className="mr-2 w-6" alt="GitHub logo" />
+          Source
+        </a>
       </div>
       <div className="flex h-full flex-row">
         <div className="w-96 p-4">
