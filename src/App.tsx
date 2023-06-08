@@ -139,6 +139,7 @@ export default function App() {
             </>
           )}
         </div>
+        <div className="divider divider-horizontal" />
         <div className="p-5">
           {selectedAxisIndex !== undefined && (
             <>
