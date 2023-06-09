@@ -4,8 +4,6 @@ export function useGamepads(): Gamepad[] {
   const [gamepads, setGamepads] = useState<Gamepad[]>([]);
   const requestRef = useRef<number>();
 
-  const haveEvents = "ongamepadconnected" in window;
-
   const addGamepad = useCallback(
     (gamepad: Gamepad) => {
       setGamepads((gps) => {
@@ -67,11 +65,9 @@ export function useGamepads(): Gamepad[] {
   }, [connectGamepadHandler, disconnectGamepadHandler]);
 
   const animate = useCallback(() => {
-    if (haveEvents) {
-      scanGamepads();
-    }
+    scanGamepads();
     requestRef.current = requestAnimationFrame(animate);
-  }, [requestRef, scanGamepads, haveEvents]);
+  }, [scanGamepads]);
 
   useEffect(() => {
     requestRef.current = requestAnimationFrame(animate);
