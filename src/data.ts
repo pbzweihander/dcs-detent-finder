@@ -22,6 +22,10 @@ export const aircraftDetents: AircraftDetent[] = [
     mil: 20,
   },
   {
+    name: "F-15E",
+    mil: 25,
+  },
+  {
     name: "F-16C",
     mil: 25,
   },
