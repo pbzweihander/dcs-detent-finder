@@ -96,6 +96,12 @@ export default function App() {
         <h1 className="ml-2 text-xl">DCS Afterburner Detent Finder</h1>
         <span className="grow" />
         <a
+          className="link mr-5"
+          href="https://www.digitalcombatsimulator.com/en/files/3315617/"
+        >
+          Thanks to JC of DI for the original data!
+        </a>
+        <a
           className="link mr-2"
           href="https://github.com/pbzweihander/dcs-detent-finder"
         >
