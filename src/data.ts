@@ -43,7 +43,7 @@ export const aircraftDetents: AircraftDetent[] = [
   },
   {
     name: "Mirage 2000C",
-    mil: 12,
+    mil: 11,
   },
   {
     name: "Mirage F1",
